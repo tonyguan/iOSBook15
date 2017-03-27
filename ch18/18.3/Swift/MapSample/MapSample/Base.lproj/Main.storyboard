@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RyB-DD-eq2">
+                                <rect key="frame" x="0.0" y="130" width="375" height="537"/>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DO9-vt-xtW">
+                                <rect key="frame" x="72" y="55" width="231" height="29"/>
+                                <segments>
+                                    <segment title="普通地图"/>
+                                    <segment title="卫星地图"/>
+                                    <segment title="混合地图"/>
+                                </segments>
+                                <connections>
+                                    <action selector="selectMapViewType:" destination="BYZ-38-t0r" eventType="valueChanged" id="PYp-rc-u6X"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DO9-vt-xtW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="56" id="4tD-9y-ovd"/>
+                            <constraint firstItem="RyB-DD-eq2" firstAttribute="top" secondItem="DO9-vt-xtW" secondAttribute="bottom" constant="47" id="CSB-B4-GNO"/>
+                            <constraint firstItem="DO9-vt-xtW" firstAttribute="centerX" secondItem="RyB-DD-eq2" secondAttribute="centerX" id="IvC-YK-JKx"/>
+                            <constraint firstItem="DO9-vt-xtW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="Vyz-ej-eBf"/>
+                            <constraint firstItem="RyB-DD-eq2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dWG-9W-D0H"/>
+                            <constraint firstAttribute="trailing" secondItem="RyB-DD-eq2" secondAttribute="trailing" id="heP-HA-HEm"/>
+                            <constraint firstItem="RyB-DD-eq2" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="upA-OC-3Za"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4tD-9y-ovd"/>
+                                <exclude reference="IvC-YK-JKx"/>
+                                <exclude reference="Vyz-ej-eBf"/>
+                                <exclude reference="CSB-B4-GNO"/>
+                                <exclude reference="dWG-9W-D0H"/>
+                                <exclude reference="heP-HA-HEm"/>
+                                <exclude reference="upA-OC-3Za"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="4tD-9y-ovd"/>
+                                <include reference="IvC-YK-JKx"/>
+                                <include reference="Vyz-ej-eBf"/>
+                                <include reference="CSB-B4-GNO"/>
+                                <include reference="dWG-9W-D0H"/>
+                                <include reference="heP-HA-HEm"/>
+                                <include reference="upA-OC-3Za"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="RyB-DD-eq2" id="tBv-QR-lrX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95" y="125"/>
+        </scene>
+    </scenes>
+</document>

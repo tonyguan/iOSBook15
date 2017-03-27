@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TCY-3D-CZY">
+                                <rect key="frame" x="0.0" y="170.5" width="375" height="497.5"/>
+                            </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="KhX-Vi-eRI">
+                                <rect key="frame" x="100" y="28" width="175" height="120.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3BA-TX-zBr">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="60.5"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="输入查询地点关键字：" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjk-E0-jYM">
+                                                <rect key="frame" x="0.0" y="0.0" width="175" height="20.5"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lgu-pf-5UJ">
+                                                <rect key="frame" x="0.0" y="30.5" width="175" height="30"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vco-za-oHi">
+                                        <rect key="frame" x="0.0" y="90.5" width="175" height="30"/>
+                                        <state key="normal" title="地理信息编码查询">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="geocodeQuery:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zn4-Hm-ktt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TCY-3D-CZY" firstAttribute="top" secondItem="KhX-Vi-eRI" secondAttribute="bottom" constant="22" id="00r-HW-mqz"/>
+                            <constraint firstItem="KhX-Vi-eRI" firstAttribute="centerX" secondItem="TCY-3D-CZY" secondAttribute="centerX" id="MeR-x2-63b"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="TCY-3D-CZY" secondAttribute="bottom" constant="-1" id="cBM-5e-QAa"/>
+                            <constraint firstItem="KhX-Vi-eRI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="dTu-N6-COk"/>
+                            <constraint firstAttribute="trailing" secondItem="TCY-3D-CZY" secondAttribute="trailing" id="dlp-Fz-SLS"/>
+                            <constraint firstItem="TCY-3D-CZY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fQg-bO-9tU"/>
+                            <constraint firstItem="KhX-Vi-eRI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="84" id="fi1-LF-Bjy"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="MeR-x2-63b"/>
+                                <exclude reference="dTu-N6-COk"/>
+                                <exclude reference="fi1-LF-Bjy"/>
+                                <exclude reference="00r-HW-mqz"/>
+                                <exclude reference="cBM-5e-QAa"/>
+                                <exclude reference="dlp-Fz-SLS"/>
+                                <exclude reference="fQg-bO-9tU"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="MeR-x2-63b"/>
+                                <include reference="dTu-N6-COk"/>
+                                <include reference="fi1-LF-Bjy"/>
+                                <include reference="00r-HW-mqz"/>
+                                <include reference="cBM-5e-QAa"/>
+                                <include reference="dlp-Fz-SLS"/>
+                                <include reference="fQg-bO-9tU"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="TCY-3D-CZY" id="i1G-cM-FU1"/>
+                        <outlet property="txtQueryKey" destination="Lgu-pf-5UJ" id="icI-wR-vF5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.80000000000001" y="428.63568215892059"/>
+        </scene>
+    </scenes>
+</document>

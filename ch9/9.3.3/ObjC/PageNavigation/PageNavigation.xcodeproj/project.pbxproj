@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CAB9C1A11DC625180023C94E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB9C1A01DC625180023C94E /* main.m */; };
+		CAB9C1A41DC625180023C94E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB9C1A31DC625180023C94E /* AppDelegate.m */; };
+		CAB9C1A71DC625180023C94E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB9C1A61DC625180023C94E /* ViewController.m */; };
+		CAB9C1AC1DC625180023C94E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB9C1AB1DC625180023C94E /* Assets.xcassets */; };
+		CAB9C1AF1DC625180023C94E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB9C1AD1DC625180023C94E /* LaunchScreen.storyboard */; };
+		CAB9C1BA1DC625230023C94E /* 保罗克利-肖像.png in Resources */ = {isa = PBXBuildFile; fileRef = CAB9C1B71DC625230023C94E /* 保罗克利-肖像.png */; };
+		CAB9C1BB1DC625230023C94E /* 罗丹-思想者.png in Resources */ = {isa = PBXBuildFile; fileRef = CAB9C1B81DC625230023C94E /* 罗丹-思想者.png */; };
+		CAB9C1BC1DC625230023C94E /* 达芬奇-蒙娜丽莎.png in Resources */ = {isa = PBXBuildFile; fileRef = CAB9C1B91DC625230023C94E /* 达芬奇-蒙娜丽莎.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CAB9C19C1DC625180023C94E /* PageNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAB9C1A01DC625180023C94E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CAB9C1A21DC625180023C94E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CAB9C1A31DC625180023C94E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CAB9C1A51DC625180023C94E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CAB9C1A61DC625180023C94E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CAB9C1AB1DC625180023C94E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAB9C1AE1DC625180023C94E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CAB9C1B01DC625180023C94E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAB9C1B71DC625230023C94E /* 保罗克利-肖像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "保罗克利-肖像.png"; sourceTree = "<group>"; };
+		CAB9C1B81DC625230023C94E /* 罗丹-思想者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "罗丹-思想者.png"; sourceTree = "<group>"; };
+		CAB9C1B91DC625230023C94E /* 达芬奇-蒙娜丽莎.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "达芬奇-蒙娜丽莎.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAB9C1991DC625180023C94E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAB9C1931DC625180023C94E = {
+			isa = PBXGroup;
+			children = (
+				CAB9C19E1DC625180023C94E /* PageNavigation */,
+				CAB9C19D1DC625180023C94E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAB9C19D1DC625180023C94E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAB9C19C1DC625180023C94E /* PageNavigation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAB9C19E1DC625180023C94E /* PageNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				CAB9C1B61DC625230023C94E /* images */,
+				CAB9C1A21DC625180023C94E /* AppDelegate.h */,
+				CAB9C1A31DC625180023C94E /* AppDelegate.m */,
+				CAB9C1A51DC625180023C94E /* ViewController.h */,
+				CAB9C1A61DC625180023C94E /* ViewController.m */,
+				CAB9C1AB1DC625180023C94E /* Assets.xcassets */,
+				CAB9C1AD1DC625180023C94E /* LaunchScreen.storyboard */,
+				CAB9C1B01DC625180023C94E /* Info.plist */,
+				CAB9C19F1DC625180023C94E /* Supporting Files */,
+			);
+			path = PageNavigation;
+			sourceTree = "<group>";
+		};
+		CAB9C19F1DC625180023C94E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAB9C1A01DC625180023C94E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CAB9C1B61DC625230023C94E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				CAB9C1B71DC625230023C94E /* 保罗克利-肖像.png */,
+				CAB9C1B81DC625230023C94E /* 罗丹-思想者.png */,
+				CAB9C1B91DC625230023C94E /* 达芬奇-蒙娜丽莎.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAB9C19B1DC625180023C94E /* PageNavigation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAB9C1B31DC625180023C94E /* Build configuration list for PBXNativeTarget "PageNavigation" */;
+			buildPhases = (
+				CAB9C1981DC625180023C94E /* Sources */,
+				CAB9C1991DC625180023C94E /* Frameworks */,
+				CAB9C19A1DC625180023C94E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PageNavigation;
+			productName = PageNavigation;
+			productReference = CAB9C19C1DC625180023C94E /* PageNavigation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAB9C1941DC625180023C94E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "关东升";
+				TargetAttributes = {
+					CAB9C19B1DC625180023C94E = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CAB9C1971DC625180023C94E /* Build configuration list for PBXProject "PageNavigation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAB9C1931DC625180023C94E;
+			productRefGroup = CAB9C19D1DC625180023C94E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAB9C19B1DC625180023C94E /* PageNavigation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAB9C19A1DC625180023C94E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAB9C1BB1DC625230023C94E /* 罗丹-思想者.png in Resources */,
+				CAB9C1BA1DC625230023C94E /* 保罗克利-肖像.png in Resources */,
+				CAB9C1AF1DC625180023C94E /* LaunchScreen.storyboard in Resources */,
+				CAB9C1AC1DC625180023C94E /* Assets.xcassets in Resources */,
+				CAB9C1BC1DC625230023C94E /* 达芬奇-蒙娜丽莎.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAB9C1981DC625180023C94E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAB9C1A71DC625180023C94E /* ViewController.m in Sources */,
+				CAB9C1A41DC625180023C94E /* AppDelegate.m in Sources */,
+				CAB9C1A11DC625180023C94E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CAB9C1AD1DC625180023C94E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAB9C1AE1DC625180023C94E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CAB9C1B11DC625180023C94E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CAB9C1B21DC625180023C94E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAB9C1B41DC625180023C94E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PageNavigation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.51work6.PageNavigation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CAB9C1B51DC625180023C94E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PageNavigation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.51work6.PageNavigation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAB9C1971DC625180023C94E /* Build configuration list for PBXProject "PageNavigation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAB9C1B11DC625180023C94E /* Debug */,
+				CAB9C1B21DC625180023C94E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAB9C1B31DC625180023C94E /* Build configuration list for PBXNativeTarget "PageNavigation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAB9C1B41DC625180023C94E /* Debug */,
+				CAB9C1B51DC625180023C94E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAB9C1941DC625180023C94E /* Project object */;
+}

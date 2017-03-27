@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ReverseGeocode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="L2i-fr-xmR">
+                                <rect key="frame" x="94" y="70" width="187" height="210"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xj9-aQ-DaV">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="经度：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1O-SG-wzZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="52" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Px-pZ-igy">
+                                                <rect key="frame" x="62" y="0.0" width="125" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3yT-4d-baw">
+                                        <rect key="frame" x="0.0" y="90" width="187" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="纬度：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jme-f9-nKy">
+                                                <rect key="frame" x="0.0" y="0.0" width="52" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XO9-MV-ark">
+                                                <rect key="frame" x="62" y="0.0" width="125" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YRW-X3-Oad">
+                                        <rect key="frame" x="0.0" y="180" width="187" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="高度：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Pf-ZQ-PBZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="52" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fuw-5d-55x">
+                                                <rect key="frame" x="62" y="0.0" width="125" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Xj9-aQ-DaV" secondAttribute="trailing" id="HK9-AM-iJD"/>
+                                    <constraint firstItem="Xj9-aQ-DaV" firstAttribute="trailing" secondItem="3yT-4d-baw" secondAttribute="trailing" id="S6M-Of-fFQ"/>
+                                    <constraint firstItem="3yT-4d-baw" firstAttribute="trailing" secondItem="YRW-X3-Oad" secondAttribute="trailing" id="uuV-Tb-ghR"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="HK9-AM-iJD"/>
+                                        <exclude reference="S6M-Of-fFQ"/>
+                                        <exclude reference="uuV-Tb-ghR"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="HK9-AM-iJD"/>
+                                        <include reference="S6M-Of-fFQ"/>
+                                        <include reference="uuV-Tb-ghR"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLu-he-T0b">
+                                <rect key="frame" x="-13" y="316" width="0.0" height="0.0"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="OYd-wT-OQb"/>
+                                    <constraint firstAttribute="width" id="vpW-sn-hsL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="OYd-wT-OQb"/>
+                                        <exclude reference="vpW-sn-hsL"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="OYd-wT-OQb"/>
+                                        <include reference="vpW-sn-hsL"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FsD-6B-lhc">
+                                <rect key="frame" x="90" y="332" width="195" height="30"/>
+                                <state key="normal" title="地理信息反编码"/>
+                                <connections>
+                                    <action selector="reverseGeocode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ZF-or-jpR"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qv-wJ-wmx">
+                                <rect key="frame" x="67" y="402" width="240" height="128"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="L2i-fr-xmR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="78" id="1fS-P9-ybR"/>
+                            <constraint firstItem="6qv-wJ-wmx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6QG-Nn-JPc"/>
+                            <constraint firstItem="6qv-wJ-wmx" firstAttribute="top" secondItem="FsD-6B-lhc" secondAttribute="bottom" constant="40" id="6UO-jh-yqR"/>
+                            <constraint firstItem="bLu-he-T0b" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="316" id="77r-Xo-5gN"/>
+                            <constraint firstItem="L2i-fr-xmR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="8qa-KY-y0w"/>
+                            <constraint firstItem="6qv-wJ-wmx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="D3P-HD-Rma"/>
+                            <constraint firstItem="FsD-6B-lhc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="74" id="O85-aT-nwf"/>
+                            <constraint firstItem="FsD-6B-lhc" firstAttribute="top" secondItem="L2i-fr-xmR" secondAttribute="bottom" constant="52" id="cLY-eA-bpx"/>
+                            <constraint firstItem="L2i-fr-xmR" firstAttribute="centerX" secondItem="FsD-6B-lhc" secondAttribute="centerX" id="cmL-Dp-cII"/>
+                            <constraint firstItem="FsD-6B-lhc" firstAttribute="centerX" secondItem="6qv-wJ-wmx" secondAttribute="centerX" id="fS9-nL-pAX"/>
+                            <constraint firstItem="bLu-he-T0b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-29" id="o3a-Wy-Nez"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6qv-wJ-wmx" secondAttribute="bottom" constant="137" id="zRm-gg-u7t"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1fS-P9-ybR"/>
+                                <exclude reference="8qa-KY-y0w"/>
+                                <exclude reference="cmL-Dp-cII"/>
+                                <exclude reference="77r-Xo-5gN"/>
+                                <exclude reference="o3a-Wy-Nez"/>
+                                <exclude reference="O85-aT-nwf"/>
+                                <exclude reference="cLY-eA-bpx"/>
+                                <exclude reference="fS9-nL-pAX"/>
+                                <exclude reference="6QG-Nn-JPc"/>
+                                <exclude reference="6UO-jh-yqR"/>
+                                <exclude reference="D3P-HD-Rma"/>
+                                <exclude reference="zRm-gg-u7t"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="1fS-P9-ybR"/>
+                                <include reference="8qa-KY-y0w"/>
+                                <include reference="cmL-Dp-cII"/>
+                                <include reference="77r-Xo-5gN"/>
+                                <include reference="o3a-Wy-Nez"/>
+                                <include reference="O85-aT-nwf"/>
+                                <include reference="cLY-eA-bpx"/>
+                                <include reference="fS9-nL-pAX"/>
+                                <include reference="6QG-Nn-JPc"/>
+                                <include reference="6UO-jh-yqR"/>
+                                <include reference="D3P-HD-Rma"/>
+                                <include reference="zRm-gg-u7t"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="txtAlt" destination="Fuw-5d-55x" id="Nw7-md-yAu"/>
+                        <outlet property="txtLat" destination="XO9-MV-ark" id="gOr-2m-KUV"/>
+                        <outlet property="txtLng" destination="7Px-pZ-igy" id="f5g-IV-MZU"/>
+                        <outlet property="txtView" destination="6qv-wJ-wmx" id="8a0-IH-KNm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="213.59999999999999" y="-38.23088455772114"/>
+        </scene>
+    </scenes>
+</document>

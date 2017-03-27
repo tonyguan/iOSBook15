@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jpG-wp-h7t">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="S5k-X2-C4d">
+            <objects>
+                <tableViewController id="NpL-FY-4Fj" customClass="ViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="aeY-O8-RuO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection headerTitle="时间中断触发器" id="H8Y-h3-CUJ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Pjp-Hf-IFX">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pjp-Hf-IFX" id="JgG-ee-BoV">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ao3-kA-5t9">
+                                                    <rect key="frame" x="156" y="6" width="62" height="30"/>
+                                                    <state key="normal" title="开启通知"/>
+                                                    <connections>
+                                                        <action selector="scheduleNotification:" destination="NpL-FY-4Fj" eventType="touchUpInside" id="gjm-IY-WVb"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ao3-kA-5t9" firstAttribute="centerX" secondItem="JgG-ee-BoV" secondAttribute="centerX" id="FAR-he-drP"/>
+                                                <constraint firstItem="ao3-kA-5t9" firstAttribute="centerY" secondItem="JgG-ee-BoV" secondAttribute="centerY" id="Gpi-u9-bgg"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="ao3-kA-5t9"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="FAR-he-drP"/>
+                                                    <exclude reference="Gpi-u9-bgg"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular">
+                                                <mask key="subviews">
+                                                    <include reference="ao3-kA-5t9"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="FAR-he-drP"/>
+                                                    <include reference="Gpi-u9-bgg"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="日历触发器" id="zch-MH-3h6">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1kK-Tq-MxZ">
+                                        <rect key="frame" x="0.0" y="100" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1kK-Tq-MxZ" id="J2T-jE-9LK">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" tag="300" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iy2-mQ-Od5">
+                                                    <rect key="frame" x="156" y="6" width="62" height="30"/>
+                                                    <state key="normal" title="开启通知"/>
+                                                    <connections>
+                                                        <action selector="scheduleNotification:" destination="NpL-FY-4Fj" eventType="touchUpInside" id="DgU-0D-L64"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="iy2-mQ-Od5" firstAttribute="centerX" secondItem="J2T-jE-9LK" secondAttribute="centerX" id="3zk-gX-2Hn"/>
+                                                <constraint firstItem="iy2-mQ-Od5" firstAttribute="centerY" secondItem="J2T-jE-9LK" secondAttribute="centerY" id="gu1-tT-aVI"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="iy2-mQ-Od5"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="3zk-gX-2Hn"/>
+                                                    <exclude reference="gu1-tT-aVI"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular">
+                                                <mask key="subviews">
+                                                    <include reference="iy2-mQ-Od5"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="3zk-gX-2Hn"/>
+                                                    <include reference="gu1-tT-aVI"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <variation key="heightClass=regular">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </variation>
+                        <connections>
+                            <outlet property="dataSource" destination="NpL-FY-4Fj" id="WaZ-Gk-E9x"/>
+                            <outlet property="delegate" destination="NpL-FY-4Fj" id="RXB-4n-DaB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="mRU-L1-1CV"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pP0-bz-yO0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1385" y="69"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="e3L-X8-zVl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jpG-wp-h7t" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="c9P-VD-TFs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NpL-FY-4Fj" kind="relationship" relationship="rootViewController" id="4Hw-40-OwD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6uw-VW-b34" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="216.80000000000001" y="124.58770614692655"/>
+        </scene>
+    </scenes>
+</document>

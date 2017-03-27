@@ -1,0 +1,56 @@
+{
+  "stickers" : [
+    {
+      "filename" : "archery.sticker"
+    },
+    {
+      "filename" : "athletics.sticker"
+    },
+    {
+      "filename" : "badminton.sticker"
+    },
+    {
+      "filename" : "basketball.sticker"
+    },
+    {
+      "filename" : "beach-volleyball.sticker"
+    },
+    {
+      "filename" : "boxing.sticker"
+    },
+    {
+      "filename" : "canoe-slalom.sticker"
+    },
+    {
+      "filename" : "canoe-sprint.sticker"
+    },
+    {
+      "filename" : "cycling-bmx.sticker"
+    },
+    {
+      "filename" : "cycling-mountain-bike.sticker"
+    },
+    {
+      "filename" : "cycling-road.sticker"
+    },
+    {
+      "filename" : "cycling-track.sticker"
+    },
+    {
+      "filename" : "dog.sticker"
+    },
+    {
+      "filename" : "rabbit.sticker"
+    },
+    {
+      "filename" : "Sticker Sequence.stickersequence"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "properties" : {
+    "grid-size" : "regular"
+  }
+}

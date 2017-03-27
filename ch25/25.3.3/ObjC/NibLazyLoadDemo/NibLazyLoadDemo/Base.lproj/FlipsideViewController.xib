@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FlipsideViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="子视图" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVj-zX-enZ">
+                    <rect key="frame" x="147" y="210" width="81" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="81" id="3GS-bc-if2"/>
+                        <constraint firstAttribute="width" constant="81" id="Wxt-XV-jKD"/>
+                        <constraint firstAttribute="width" constant="81" id="k5g-BE-zzQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Wxt-XV-jKD"/>
+                            <exclude reference="k5g-BE-zzQ"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular">
+                        <mask key="constraints">
+                            <exclude reference="3GS-bc-if2"/>
+                            <include reference="Wxt-XV-jKD"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="k5g-BE-zzQ"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <exclude reference="k5g-BE-zzQ"/>
+                        </mask>
+                    </variation>
+                </label>
+                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGc-5u-ODk">
+                    <rect key="frame" x="3" y="24" width="369" height="44"/>
+                    <items>
+                        <navigationItem id="DfE-Gi-dyr">
+                            <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="pfz-JO-kYU">
+                                <connections>
+                                    <action selector="cancel:" destination="-1" id="14n-cC-Bbp"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" systemItem="done" id="dlc-au-y4t">
+                                <connections>
+                                    <action selector="done:" destination="-1" id="lOP-if-474"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZGc-5u-ODk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="24" id="0a6-G3-njQ"/>
+                <constraint firstItem="AVj-zX-enZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="210" id="0tw-lo-EdE"/>
+                <constraint firstItem="ZGc-5u-ODk" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" id="HTk-UF-jqD"/>
+                <constraint firstItem="ZGc-5u-ODk" firstAttribute="centerX" secondItem="AVj-zX-enZ" secondAttribute="centerX" id="KKa-XM-BNg"/>
+                <constraint firstItem="AVj-zX-enZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="O3r-b8-4n2"/>
+                <constraint firstItem="ZGc-5u-ODk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="3" id="Prc-3G-Dun"/>
+                <constraint firstItem="AVj-zX-enZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="209" id="Uqs-ed-vbv"/>
+                <constraint firstItem="ZGc-5u-ODk" firstAttribute="centerX" secondItem="AVj-zX-enZ" secondAttribute="centerX" id="jmE-ov-Kgr"/>
+                <constraint firstItem="ZGc-5u-ODk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="nPs-aH-ghN"/>
+                <constraint firstItem="ZGc-5u-ODk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="vEq-4s-VDE"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="0a6-G3-njQ"/>
+                    <exclude reference="Prc-3G-Dun"/>
+                    <exclude reference="jmE-ov-Kgr"/>
+                    <exclude reference="0tw-lo-EdE"/>
+                    <exclude reference="O3r-b8-4n2"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular">
+                <mask key="constraints">
+                    <include reference="0a6-G3-njQ"/>
+                    <exclude reference="HTk-UF-jqD"/>
+                    <exclude reference="KKa-XM-BNg"/>
+                    <include reference="Prc-3G-Dun"/>
+                    <include reference="jmE-ov-Kgr"/>
+                    <exclude reference="nPs-aH-ghN"/>
+                    <exclude reference="vEq-4s-VDE"/>
+                    <include reference="0tw-lo-EdE"/>
+                    <include reference="O3r-b8-4n2"/>
+                    <exclude reference="Uqs-ed-vbv"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="7.5" y="1.5"/>
+        </view>
+    </objects>
+</document>

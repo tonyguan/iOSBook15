@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bKB-ia-zXY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="z4S-Ip-LTP">
+            <objects>
+                <viewController id="bKB-ia-zXY" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ASs-nn-fGA"/>
+                        <viewControllerLayoutGuide type="bottom" id="WZp-mT-C7n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7NY-sN-oXM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uH-Ab-AI4">
+                                <rect key="frame" x="92" y="35" width="190" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Uhb-9Z-vZe"/>
+                                </constraints>
+                                <state key="normal" title="GO">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClick:" destination="bKB-ia-zXY" eventType="touchUpInside" id="dfe-QM-Ur3"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4uq-oO-wuA">
+                                <rect key="frame" x="3" y="103" width="368" height="242"/>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PGP-te-o3C">
+                                <rect key="frame" x="16" y="438" width="344" height="2"/>
+                            </progressView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传进度" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdO-eD-OCy">
+                                <rect key="frame" x="16" y="386" width="119" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="119" id="tOu-09-Vd7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4uq-oO-wuA" firstAttribute="leading" secondItem="7NY-sN-oXM" secondAttribute="leadingMargin" constant="-13" id="Eif-KV-Jid"/>
+                            <constraint firstItem="pdO-eD-OCy" firstAttribute="top" secondItem="4uq-oO-wuA" secondAttribute="bottom" constant="41" id="HkT-CJ-8aG"/>
+                            <constraint firstItem="8uH-Ab-AI4" firstAttribute="leading" secondItem="7NY-sN-oXM" secondAttribute="leadingMargin" constant="76" id="SSk-23-K78"/>
+                            <constraint firstItem="PGP-te-o3C" firstAttribute="top" secondItem="pdO-eD-OCy" secondAttribute="bottom" constant="31" id="TYk-Hh-FAM"/>
+                            <constraint firstItem="8uH-Ab-AI4" firstAttribute="top" secondItem="ASs-nn-fGA" secondAttribute="bottom" constant="15" id="VgC-fs-ctd"/>
+                            <constraint firstItem="pdO-eD-OCy" firstAttribute="leading" secondItem="7NY-sN-oXM" secondAttribute="leadingMargin" id="WCp-6N-te0"/>
+                            <constraint firstItem="4uq-oO-wuA" firstAttribute="top" secondItem="ASs-nn-fGA" secondAttribute="bottom" constant="83" id="fwS-QB-fcD"/>
+                            <constraint firstItem="WZp-mT-C7n" firstAttribute="top" secondItem="PGP-te-o3C" secondAttribute="bottom" constant="227" id="gCT-r2-RQi"/>
+                            <constraint firstItem="PGP-te-o3C" firstAttribute="centerX" secondItem="7NY-sN-oXM" secondAttribute="centerX" id="hsC-tQ-ngC"/>
+                            <constraint firstItem="8uH-Ab-AI4" firstAttribute="centerX" secondItem="4uq-oO-wuA" secondAttribute="centerX" id="oUM-h0-Z4g"/>
+                            <constraint firstItem="8uH-Ab-AI4" firstAttribute="centerX" secondItem="7NY-sN-oXM" secondAttribute="centerX" id="qqa-Yg-K8f"/>
+                            <constraint firstItem="pdO-eD-OCy" firstAttribute="leading" secondItem="PGP-te-o3C" secondAttribute="leading" id="yBi-0s-ZPC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView1" destination="4uq-oO-wuA" id="ykj-Fl-JcI"/>
+                        <outlet property="label" destination="pdO-eD-OCy" id="MxK-Wi-nNg"/>
+                        <outlet property="progressView" destination="PGP-te-o3C" id="1ru-3Y-zsh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Xn-ba-Zq5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="180" y="106.59670164917542"/>
+        </scene>
+    </scenes>
+</document>

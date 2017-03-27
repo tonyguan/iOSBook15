@@ -1,0 +1,25 @@
+{
+  "properties" : {
+    "duration" : 15,
+    "duration-type" : "fps",
+    "repetitions" : 0
+  },
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "frames" : [
+    {
+      "filename" : "hero1.png"
+    },
+    {
+      "filename" : "hero2.png"
+    },
+    {
+      "filename" : "hero3.png"
+    },
+    {
+      "filename" : "hero4.png"
+    }
+  ]
+}

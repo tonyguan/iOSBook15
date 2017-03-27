@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Messages View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qkL-Od-lgU"/>
+                        <viewControllerLayoutGuide type="bottom" id="n38-gi-rB5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Nc-GK-lfw">
+                                <rect key="frame" x="129" y="488" width="62" height="30"/>
+                                <state key="normal" title="创建消息"/>
+                                <connections>
+                                    <action selector="onclick:" destination="ObA-dk-sSI" eventType="touchUpInside" id="f08-Mx-jKI"/>
+                                </connections>
+                            </button>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="aKH-Hz-ib4">
+                                <rect key="frame" x="113" y="250" width="94" height="29"/>
+                                <connections>
+                                    <action selector="onValueChanged:" destination="ObA-dk-sSI" eventType="valueChanged" id="aOK-JA-sTe"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Eg-1r-SK8">
+                                <rect key="frame" x="135" y="194" width="50" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="pb6-tr-7Tg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9Nc-GK-lfw" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="3xi-hq-JTX"/>
+                            <constraint firstItem="aKH-Hz-ib4" firstAttribute="centerX" secondItem="9Nc-GK-lfw" secondAttribute="centerX" id="9S6-kM-O2n"/>
+                            <constraint firstItem="6Eg-1r-SK8" firstAttribute="centerX" secondItem="aKH-Hz-ib4" secondAttribute="centerX" id="Gc3-gp-2aI"/>
+                            <constraint firstItem="aKH-Hz-ib4" firstAttribute="centerY" secondItem="zMn-AG-sqS" secondAttribute="centerY" id="NRT-W4-xgO"/>
+                            <constraint firstItem="aKH-Hz-ib4" firstAttribute="top" secondItem="6Eg-1r-SK8" secondAttribute="bottom" constant="35" id="ZaE-9H-L6z"/>
+                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="9Nc-GK-lfw" secondAttribute="bottom" constant="10" id="yoh-K6-hj6"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="528"/>
+                    <connections>
+                        <outlet property="label" destination="6Eg-1r-SK8" id="hc9-Iw-Juo"/>
+                        <outlet property="stepper" destination="aKH-Hz-ib4" id="1G1-oe-UrJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.53073463268368" y="-33.600000000000001"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jwq-Vq-93S">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="2Hp-Jl-zGL">
+            <objects>
+                <viewController id="jwq-Vq-93S" customClass="ViewController" customModule="ModalViewSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qz5-va-0Ed"/>
+                        <viewControllerLayoutGuide type="bottom" id="Edt-PZ-23K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YoB-06-bwi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="SqO-Ab-5kp">
+                                <rect key="frame" x="116" y="105" width="143" height="324"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZwP-cr-i9C">
+                                        <rect key="frame" x="0.0" y="0.0" width="143" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Full Screen"/>
+                                        <connections>
+                                            <segue destination="OXW-KC-QhL" kind="presentation" modalPresentationStyle="fullScreen" id="gje-ap-Uar"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsU-a8-lpv">
+                                        <rect key="frame" x="0.0" y="96" width="143" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Form Sheet"/>
+                                        <connections>
+                                            <segue destination="OXW-KC-QhL" kind="presentation" modalPresentationStyle="formSheet" id="esL-1N-P66"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfY-N4-LoL">
+                                        <rect key="frame" x="0.0" y="192" width="143" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Page Sheet"/>
+                                        <connections>
+                                            <segue destination="OXW-KC-QhL" kind="presentation" modalPresentationStyle="pageSheet" id="OhJ-tD-daZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RH5-e7-euq">
+                                        <rect key="frame" x="0.0" y="288" width="143" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Current Context"/>
+                                        <connections>
+                                            <segue destination="OXW-KC-QhL" kind="presentation" modalPresentationStyle="currentContext" id="ZdY-pX-XaN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SqO-Ab-5kp" firstAttribute="centerX" secondItem="YoB-06-bwi" secondAttribute="centerX" id="5g4-1o-XhB"/>
+                            <constraint firstItem="SqO-Ab-5kp" firstAttribute="top" secondItem="Qz5-va-0Ed" secondAttribute="bottom" constant="85" id="dhM-eJ-tON"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5g4-1o-XhB"/>
+                                <exclude reference="dhM-eJ-tON"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="5g4-1o-XhB"/>
+                                <include reference="dhM-eJ-tON"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Yt-4t-PH3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="754" y="312"/>
+        </scene>
+        <!--Modal View Controller-->
+        <scene sceneID="nQt-Uu-4r0">
+            <objects>
+                <viewController id="qVs-bs-SgD" customClass="ModalViewController" customModule="ModalViewSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZUn-uC-Q2c"/>
+                        <viewControllerLayoutGuide type="bottom" id="5zA-LY-eKn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zm0-Ju-3d5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Cxr-S0-EBT">
+                                <rect key="frame" x="7" y="72" width="352" height="536"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Cxr-S0-EBT" firstAttribute="trailing" secondItem="zm0-Ju-3d5" secondAttribute="trailingMargin" id="8zm-ff-gbT"/>
+                            <constraint firstItem="Cxr-S0-EBT" firstAttribute="leading" secondItem="zm0-Ju-3d5" secondAttribute="leadingMargin" constant="-9" id="A8O-kP-qYz"/>
+                            <constraint firstItem="5zA-LY-eKn" firstAttribute="top" secondItem="Cxr-S0-EBT" secondAttribute="bottom" constant="59" id="NDP-pA-A31"/>
+                            <constraint firstItem="Cxr-S0-EBT" firstAttribute="top" secondItem="ZUn-uC-Q2c" secondAttribute="bottom" constant="8" symbolic="YES" id="kuS-rg-6fk"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8zm-ff-gbT"/>
+                                <exclude reference="A8O-kP-qYz"/>
+                                <exclude reference="kuS-rg-6fk"/>
+                                <exclude reference="NDP-pA-A31"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="8zm-ff-gbT"/>
+                                <include reference="A8O-kP-qYz"/>
+                                <include reference="kuS-rg-6fk"/>
+                                <include reference="NDP-pA-A31"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="FuD-hw-iNN">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Bne-If-dXN">
+                            <connections>
+                                <action selector="cancel:" destination="qVs-bs-SgD" id="R4l-sM-f7q"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="MLp-ad-iAy">
+                            <connections>
+                                <action selector="save:" destination="qVs-bs-SgD" id="HgO-at-QXv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wbu-bf-9SD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2240.8000000000002" y="311.69415292353824"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ocx-h1-l3Y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OXW-KC-QhL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MaX-Rn-177">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qVs-bs-SgD" kind="relationship" relationship="rootViewController" id="sEO-Y9-cGG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8AU-Uu-Eoq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1505" y="312"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="gje-ap-Uar"/>
+    </inferredMetricsTieBreakers>
+</document>
