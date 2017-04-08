@@ -15,7 +15,7 @@
 #import "ViewController.h"
 
 @interface ViewController () {
-    //小球运动方向标志，1向下运行，-1向上运行
+    //小球运动方向标志，1表示向下运行，-1表示向上运行
     int flag;
 }
 

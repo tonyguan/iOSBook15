@@ -16,7 +16,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var boolTrashEmptyFlag = false //垃圾桶空标志 false 桶满,true 桶空
+    var boolTrashEmptyFlag = false //垃圾桶是否为空标志：false-桶满；true-桶空
     
     var imageTrashFull : UIImage!
     var imageTrashEmpty : UIImage!

@@ -62,10 +62,10 @@
     
     switch (sender.edges) {
         case UIRectEdgeLeft:
-            self.label.text = @"从右边缘向左平移";
+            self.label.text = @"从左边缘向右平移";
             break;
         case UIRectEdgeRight:
-            self.label.text = @"从左边缘向右平移";
+            self.label.text = @"从右边缘向左平移";
             break;
         default:
             self.label.text = @"";

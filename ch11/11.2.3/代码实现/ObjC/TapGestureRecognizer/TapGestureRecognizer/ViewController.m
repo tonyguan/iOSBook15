@@ -16,7 +16,7 @@
 
 @interface ViewController ()
 {
-    BOOL boolTrashEmptyFlag;//垃圾桶空标志 NO 桶满,YES 桶空
+    BOOL boolTrashEmptyFlag;//垃圾桶是否为空标志：NO-桶满；YES-桶空
 }
 
 @property (strong, nonatomic) UIImage *imageTrashFull;

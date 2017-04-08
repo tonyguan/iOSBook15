@@ -56,9 +56,9 @@ class ViewController: UIViewController {
         
         switch sender.edges {
         case UIRectEdge.left:
-            self.label.text = "从右边缘向左平移"
-        case UIRectEdge.right:
             self.label.text = "从左边缘向右平移"
+        case UIRectEdge.right:
+            self.label.text = "从右边缘向左平移"
         default:
             self.label.text = ""
         }
